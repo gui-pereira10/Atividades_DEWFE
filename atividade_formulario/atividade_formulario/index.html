@@ -1,0 +1,166 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: ______________________
+
+Descrição: Formulário HTML5.
+
+Data: __/__/____
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>O formulario de cadastro deve ser desenvolvido aqui</p>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <P>E-mail:</P>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                </fieldset>
+                </form>
+                    
+                    <fieldset>
+                        <legend>Informações</legend>
+
+                        <p>Gênero:</p>
+                        
+                        <form>
+                            <input type="radio" name="genero" id="masc" value="masculino">
+                            <label for="masc">Masculino</label>
+
+                            <input type="radio" name="genero" id="femi" value="feminino">
+                            <label for="femi">Feminino</label>
+                            
+                            <input type="radio" name="genero" id="outro" value="outro">
+                            <label for="outro">Outro</label>
+                        
+                        </form> <hr>
+
+                        <p>Interesses</p>
+                        <form>
+                            <input type="checkbox" name="interesses" id="tec">
+                            <label for="tec">Tecnologia</label>
+
+                            <input type="checkbox" name="interesses" id="Espor">
+                            <label for="Espor">Esportes</label>
+
+                            <input type="checkbox" name="interesses" id="Mus">
+                            <label for="Mus">Musica</label>
+
+                            <input type="checkbox" name="interesses" id="Jogos">
+                            <label for="Jogos">Jogos</label>
+                        </form> <hr>
+
+                        <p>Estado</p>
+                        <form>
+                            <select name="Estados" id="Estado">
+                            <option value="" selected disabled> Selecione </option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            </select>
+                        </form>
+                        <hr>
+                        <p>Mensagem:</p>
+                        <form>
+                            <textarea name="Mensagem id="Mensagem"></textarea>
+                        </form>
+                        <hr>
+                        <p>Upload de arquivos:</p>
+                        <form>
+                            <input type="file" name="Upload">
+                        </form>
+                            <form><input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                       </form>
+                    </fieldset>
+              
+        </section>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
