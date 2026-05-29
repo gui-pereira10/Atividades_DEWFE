@@ -1,0 +1,33 @@
+#cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #222;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subtitulo {
+    font-size: 14px; 
+    font-weight: normal; 
+    margin-top: 0; 
+    align-items: center;
+}
+
+#Santos_Logo {
+    width: 100px;
+}
+
+.njg {
+    width: 200px;
+    
+}
+
+
