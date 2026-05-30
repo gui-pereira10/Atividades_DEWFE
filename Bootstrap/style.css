@@ -1,0 +1,97 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nike{
+  width: 100px;
+  height: auto;
+}
+.logoCamisas{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+#carrosel-direita {
+    margin-right: 20px;
+}
+
+#carrosel-esquerda {
+    margin-left: 20px;
+}
+
+.camisas{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* explorando sombra do cabecalho sobrepondo a imagem*/
+header {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.40);
+  border-radius: 40px;
+  z-index: 10;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+/*Removendo o visual de link */
+.navLinks a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    text-decoration: none; 
+    color: inherit;         
+    
+}
+.navLinks a:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* tamanho e centralização do nav*/
+.menuNav {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  padding: 10px;
+  gap: 60px;
+  justify-content: space-between;
+  
+}
+.navLinks{
+    display: flex; 
+    list-style: none;
+    gap: 60px;
+    font-size: 35px;
+    padding: 40px;
+    
+}
+
+#hamburguer {
+    display: none;
+}
+
+@media (max-width: 460px){
+
+    .menuNav{
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .navLinks{
+        display: none;
+        gap: 20px;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #hamburguer{
+        display: block;
+    }
+}
